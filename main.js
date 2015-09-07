@@ -34,12 +34,12 @@ define(function (require, exports, module) {
 
   var LanguageManager = brackets.getModule("language/LanguageManager");
 
-  LanguageManager.getLanguageForExtension("tpl").removeFileExtension("tpl");
+  LanguageManager.getLanguageForExtension("tmpl").removeFileExtension("tmpl");
 
   LanguageManager.defineLanguage("smarty", {
     name: "smarty",
     mode: "smarty",
-    fileExtensions: ["tpl"],
+    fileExtensions: ["tmpl"],
     blockComment: ["{*", "*}"]
   });
 });
